@@ -1,4 +1,4 @@
-#TP2 -CISSE Fousseyni - Gestion des branches et fusion
+#TP2 -Branches, merge et rebase -CISSE Fousseyni
 
 Modification sur develop avant merge de f1
 
