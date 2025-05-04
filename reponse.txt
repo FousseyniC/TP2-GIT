@@ -1,0 +1,76 @@
+1) git init
+2)git branch -m develop
+echo "#TP2 : Gestion des branches" >> README.md
+ git add .
+git commit -m "ajout du titre du projet"
+
+3)git switch -c feature1
+ echo "Ceci est une description du projet" >> README.md
+git add .
+git commit -m "description"
+
+4)
+git switch develop
+echo "Modification sur develop avant merge de f1">> README.md
+git commit -m "ajout modif"
+ git merge feature1
+
+
+5)git status
+git switch -c feature2
+notepad README.md
+git add .
+ git commit -m "ajout de mon prenom dans le titre"
+
+6)git switch develop
+git switch -c feature3
+notepad README.md
+git add .
+git commit -m "ajout de 'et fusion' dans le titre"
+
+7)git switch develop
+ git merge feature2
+
+Updating 1add814..d48cd3e
+Fast-forward
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+git merge feature3
+
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+8)
+ git commit
+
+REBASE
+
+1)git switch -c feature4
+notepad README.md
+git add .
+git commit -m "Ajout dans README.md - partie rebase"
+
+
+2)
+notepad README.md
+git add .
+git commit -m "Ajout dans README.md - mention feature4"
+
+
+3)
+notepad README.md
+
+4) git log --oneline
+git rebase -i HEAD~3
+
+5)
+
+7)elle fusionne deux branche
+
+8)elle nettoie l'historique
+
+9) git push -f origin develop
+
+10)
